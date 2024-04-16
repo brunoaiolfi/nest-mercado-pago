@@ -43,23 +43,4 @@ export class PaymentsController {
       return err.message;
     }
   }
-
-  @Get('success')
-  success() {
-    console.log('Payment successful')
-    return 'Payment successful'
-  }
-
-  @Get('pending')
-  pending() {
-    console.log('Payment pending')
-    return 'Payment pending'
-  }
-
-  @Get('failure')
-  failure() {
-    console.log('Payment failed')
-    return 'Payment failed'
-  }
-
 }
